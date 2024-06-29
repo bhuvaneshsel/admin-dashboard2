@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+:root {
+    --background-color: rgba(106, 181, 194, 0.185);
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -19,4 +23,56 @@ main {
 
 header {
     border: 1px black solid;
+    padding: 20px 50px;
+}
+
+.magnify {
+    width: 30px;
+}
+
+input {
+    background-color: var(--background-color);
+    border: none;
+    height: 30px;
+    border-radius: 1000px;
+    min-width: 100px;
+    width: 100%;
+}
+
+.notifications {
+    width: 30px;
+}
+
+.account {
+    width: 40px;
+    border: 1px black solid;
+    border-radius: 50%;
+    padding: 2px;
+
+}
+
+header div:first-child div:first-child {
+    display: grid;
+    grid-template-columns: 1fr 100%;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-top-row {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10vw;
+}
+
+.header-top-row > div + div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 250px;
+}
+
+.account-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
