@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -12,14 +13,7 @@ body {
     grid-template-columns: 1fr 5fr;
 }
 
-.sidebar {
-    border: 1px black solid;
-    height: 100vh;
-}
 
-main {
-    border: 1px black solid;
-}
 
 header {
     display: grid;
@@ -75,9 +69,9 @@ header div:first-child div:first-child {
 }
 
 .account-name {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .profile-picture {
@@ -128,4 +122,47 @@ button {
     border-radius: 1000px;
     padding: 10px;
     margin-left: 20px;
+}
+
+.sidebar {
+    background-color: rgb(59, 144, 255);
+    height: 100vh;
+    padding: 30px;
+}
+
+.sidebar img {
+    width: 30px;
+}
+
+.sidebar-header  {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.sidebar-header img  {
+    width: 50px;
+    margin-left: -8px;
+}
+
+ul div img {
+    width: 30px;
+}
+
+ul div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+ul {
+    margin-bottom: 100px;
 }
