@@ -166,3 +166,43 @@ li {
 ul {
     margin-bottom: 100px;
 }
+
+.card {
+    width: 400px;
+    border-left: 10px rgb(255, 196, 0) solid;
+    border-radius: 10px;
+    background-color: white;
+    padding: 30px 25px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 30px;
+}
+
+.card-images {
+    margin-top: 15px;
+    height: 100%;
+    justify-self: end;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 25px;
+}
+
+.poll {
+    margin-bottom: 2px;
+}
+
+main {
+    background-color: var(--background-color);
+    padding: 50px;
+}
+
+main > P {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
