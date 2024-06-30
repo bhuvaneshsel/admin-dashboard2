@@ -8,9 +8,8 @@
     --background-color: rgba(106, 181, 194, 0.185);
 }
 
-body {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
+.not-sidebar {
+    padding-left: 300px;
 }
 
 
@@ -128,6 +127,8 @@ button {
     background-color: rgb(59, 144, 255);
     height: 100vh;
     padding: 30px;
+    position: fixed;
+    width: 250px;
 }
 
 .sidebar img {
@@ -168,7 +169,6 @@ ul {
 }
 
 .card {
-    width: 400px;
     border-left: 10px rgb(255, 196, 0) solid;
     border-radius: 10px;
     background-color: white;
@@ -206,3 +206,12 @@ main > P {
     font-weight: bold;
     font-size: 1.5rem;
 }
+
+.projects {
+    border: 2px black solid;
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
